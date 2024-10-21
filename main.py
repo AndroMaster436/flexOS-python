@@ -1,4 +1,4 @@
-from Core import Kernel
+from Core import Display
 import curses, time
 
 def init(stdscr):
@@ -24,3 +24,4 @@ def init(stdscr):
         break
 
 curses.wrapper(init)
+Display.init_desktop()
